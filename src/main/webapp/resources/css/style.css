@@ -1,0 +1,246 @@
+/* ----------------------- 
+      Custom style css3
+   ----------------------- */
+@charset "ISO-8859-1";
+
+
+/* ----------------------- 
+        Common css
+   ----------------------- */
+
+body{
+	background-image: url("../images/back.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color:white;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, div, thead, label {
+  font-family: "Ubuntu", "Roboto";
+}
+
+html, body {
+  height: 100%;
+}
+
+a{
+	color:none !important;
+}
+
+section{
+	background: white;
+	overflow: hidden;
+}
+
+
+/* ----------------------- 
+        Header css
+   ----------------------- */
+
+#brand_name{
+	font-size: 30px;
+	font-weight: 500;
+}
+
+a span {
+	color:#ffc107;
+}
+
+a{
+	text-decoration: none;
+}
+
+.nav-link:hover {
+  color : #ffc107 !important;
+}
+
+
+/* ----------------------- 
+        Home section
+   ----------------------- */
+   
+#Home {
+  background: none;
+  height: 100%;
+}
+
+#home-content {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  margin-top: 10vh !important;
+  border-radius: 2vh;
+}
+
+#home_video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 0;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+#overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.custom-card{
+	width:1000px; 
+	border-radius:1.25rem!important;
+	background-color:#eee;
+	background-color: rgba(225, 225, 225, 0.2);
+	border : 1px solid black;
+	border-color: rgba(225, 225, 225, 0.5);
+	
+}
+
+.select {
+	border : 1px solid white;
+}
+
+.select:focus {
+	outline:none !important;
+	border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border : 1px solid white;
+}
+
+#amount:focus{
+	font-weight: bold;
+	border:0.1px solid blue !important;
+	outline:none !important;
+	border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border : 1px solid white;	
+}
+
+#home_section{
+	margin-top:140px !important;
+}
+
+/* ----------------------- 
+        Country list section
+   ----------------------- */
+
+.country-list-section {
+  background: white;
+  height: 100%;
+  padding: 50px;
+}
+
+#country-list-content {
+		position: relative;
+    top: 30px;
+  width: 100%;
+  height: 100%;
+}
+#country-table_length{
+	display:none;
+}
+#country-table_filter{
+	padding-bottom: 10px;
+}
+
+#country-table_filter:focus{
+	border:none !important;
+}
+
+table{
+	border-bottom: none !important;
+}
+
+input[type="search"] {
+
+	width:500px;
+}
+
+
+#country-table_paginate{
+	margin-top:10px;
+	background-color: #ffc107;
+	color:white;
+}
+
+.dataTables_paginate{
+	padding-bottom:3px;
+	padding-left:3px;
+	padding-right:3px;
+	color:white !important;
+}
+.paginate_button.current{
+	background:white !important;
+	border:none !important;
+	color: black !important;
+}
+
+.navbar-fixed-top{
+	background-color: black !important;
+}
+
+
+/* ----------------------- 
+        Media Query
+   ----------------------- */
+
+
+@media screen and (max-width: 950px){
+  #home_section {
+   min-width:530px;
+   min-height:auto;
+    width:530px;
+    height:auto;
+  }
+  #currency_button {
+    width:150px !important;
+  }
+   .country-list-section{
+    min-height:auto;
+    height:auto;
+    position: relative;
+    }
+}
+
+
+@media screen and (max-width: 625px){
+  #home_section {
+    min-width:420px;
+    min-height:auto;
+    width:430px;
+    height:auto;
+    position: relative;
+    top:30px;
+  }
+  #currency_button {
+    width:150px !important;
+  }
+    #country-table_paginate{
+    width:375px;
+    height: auto;
+    bottom: 10px;
+    font-size: 15px;
+  }
+  
+ input[type="search"] {
+
+	width:400px;
+}
+}
+
+
